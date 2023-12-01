@@ -11,8 +11,6 @@ def part2(file):
     sum = 0
     for line in file:
         nums = re.findall(r'(?=(\d|one|two|three|four|five|six|seven|eight|nine))', line)
-        print (line[:-1])
-        print (nums)
         sum += (numbers[nums[0]] * 10) + numbers[nums[-1]]
     print(sum)
             
